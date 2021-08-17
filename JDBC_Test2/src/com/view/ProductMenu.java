@@ -46,10 +46,32 @@ public class ProductMenu {
 
 				break;
 			case 3:
+				result = pdc.update();
+				if(result>0) {
+					System.out.println("update 성공");
+				}else {
+					System.out.println("update 실패");
+				}
+				
 				break;
 			case 4:
+				result = pdc.delete();
+				if(result>0) {
+					System.out.println("delete 성공");
+					
+				}else {
+					System.out.println("delete 실패");
+				}
+				
 				break;
 			case 5:
+				Product p = pdc.selectOne();
+				if(p != null) {
+				System.out.println(p.getProduct_id() + p.getP_name());
+				} else {
+					System.out.println("x");
+				}
+					
 				break;
 			default:
 				System.out.println("종료");
