@@ -33,7 +33,7 @@ public class ProductMenu {
 			case 1:
 				List<Product> list = pdc.selectAll();
 				for(Product p:list) {
-					System.out.println("id: "+ p.getProduct_id()+"name: " +p.getP_name()+"price: "+ p.getPrice()+"+desc: "+p.getDescription()+"+stock: " +p.getStock());
+					System.out.println("id: "+ p.getProduct_id()+"name: " +p.getP_name()+"price: "+ p.getPrice()+"desc: "+p.getDescription()+"+stock: " +p.getStock());
 				}
 				break;
 			case 2:
